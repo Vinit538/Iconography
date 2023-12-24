@@ -1,0 +1,113 @@
+/* NavStyle.css */
+
+/* Style the entire navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: transparent;
+    backdrop-filter:blur(2px);
+    position: relative; */
+ /* You can change this to your desired background color */
+    color:aqua; /* Text color for the navbar */
+  }
+  
+
+  .nav--logo {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .nav-logo-img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  
+
+ 
+  
+
+  .nav--list ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    align-items: center;
+  }
+
+  .nav--list li {
+    margin-right: 20px; /* Add spacing between list items */
+  }
+  
+
+  .nav--list a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #c44848; /* Text color for links */
+    font-weight: bold; /* Adjust font weight to your preference */
+  }
+  
+
+  .nav--list img{
+    width: 50px; 
+  }
+  .nav-logo-img {
+    width: 150px;
+  }
+
+  h1{
+    font-size: 50px;
+    font-weight: 900;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  @media only screen and (max-width: 700px) {
+    
+    .nav-logo-img {
+      width: 40px; 
+      height: auto; 
+     
+    }
+    
+    .nav--list img{
+      width: 40px; 
+    }
+    .nav-logo-img {
+      width: 100px;
+    }
+
+
+    h1{
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    
+    .nav-logo-img {
+      width: 30px; 
+      height: auto; 
+     
+    }
+    
+    .nav--list img{
+      width: 30px; 
+    }
+    .nav-logo-img {
+      width: 80px;
+    }
+
+
+    h1{
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }

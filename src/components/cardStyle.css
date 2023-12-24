@@ -1,0 +1,103 @@
+
+
+  .card {
+    grid-column-end: span 4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: #0b182d;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 0px 25px 0px cornflowerblue;
+  }
+  
+  .card__image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card__image-container img {
+    width:300px;
+    height:170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card__content {
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: cornflowerblue;
+  }
+
+
+  .card__title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* .card__info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+  } */
+  
+  .card__price {
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: #303032;
+    border-radius: 20px;
+  }
+  .likes,
+.views {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.card__info
+{
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card__content__title{
+    color: whitesmoke;
+}
+
+.likes i,
+.views i {
+  margin-right: 5px; /* Space between icon and value */
+}
+.likes i {
+    color: red; /* Like icon color */
+  }
+  
+  .views i {
+    color: blue; /* Views icon color */
+  }
+  
+ 
+
+
+  @media only screen and (max-width: 500px) {
+    .card{
+      
+      width: 250px;
+      margin: auto;
+      
+    }
+  }
